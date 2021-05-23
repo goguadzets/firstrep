@@ -54,7 +54,6 @@ pipe[0] = {
     y : 0
 };
 
-// draw images
 
 function draw(){
     
