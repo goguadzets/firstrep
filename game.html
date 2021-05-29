@@ -5,7 +5,7 @@
         <link rel="apple-touch-icon-precomposed" href="data/img/touch-icon-iphone.png"/>
         <link rel="apple-touch-icon-precomposed" sizes="120x120" href="data/img/touch-icon-iphone-retina.png"/>
         <link rel="shortcut icon" href="data/img/favicon.ico">
-        <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
         <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -36,28 +36,33 @@
         <link rel="author" href="humans.txt" />
     </head>
 
-    <body style="background-color: #343a40;">
-        <nav class="navbar navbar-expand-lg navbar-dark " id="test">
-            <a class="navbar-brand" id="man" href="index.html">Main</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" id="folow" href="https://www.instagram.com/ts.goguadze/">Follow me <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " id="flap" href="game.html">Play flappy bird</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a class="nav-link" style="text-decoration: none; color: aliceblue;" id="fre" href="https://bit.ly/3fA3TIO">Free coupon codes</a></button>
-                </form>
-          
-            </div>
-          </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark " id="test">
+      <a class="navbar-brand" id="man" href="index.html">Main</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" id="folow" href="https://www.instagram.com/ts.goguadze/">Follow me <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " id="flap" href="game.html">Play flappy bird</a>
+          </li>
+          <li class="gallery">
+            <a class="nav-link " id="gallery" href="gallery.html" style="color: white;">Visit our epic gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " id="calc" href="calc.html" style="color: white;">Use calculator</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a class="nav-link" style="text-decoration: none; color: aliceblue;" id="fre" href="https://bit.ly/3fA3TIO">Free coupon codes</a></button>
+          </form>
+    
+      </div>
+    </nav>
         <!-- Canvas placeholder -->
         <div id="screen"></div>
         <footer  id="test2" style="height: 50px; background-color: #6c757d;">
@@ -80,6 +85,7 @@
 <style>
     body {
   text-align: center;
+  background-color: #343a40;
 }
 
 
@@ -109,6 +115,8 @@ function changeColor(color){
     document.body.style.backgroundColor = "#f8f9fa";
     document.getElementById("test").style.backgroundColor = "rgb(163 171 179)";
     document.getElementById("test2").style.backgroundColor = "rgb(163 171 179)";
+    document.getElementById("calc").style.color = "black" 
+    document.getElementById("gallery").style.color = "black"
     document.getElementById("folow").style.color = "black";
     document.getElementById("fre").style.color = "black"
     document.getElementById("flap").style.color   = "black"
@@ -122,9 +130,11 @@ function changeColor(color){
     document.getElementById("test").style.backgroundColor = "#6c757d"
     document.getElementById("test2").style.backgroundColor = "#6c757d";
     document.getElementById("folow").style.color = "white"
+    document.getElementById("calc").style.color = "white" 
     document.getElementById("fre").style.color = "white"
     document.getElementById("flap").style.color   = "white"
     document.getElementById("bt1").style.backgroundColor   = "#6c757d"
+    document.getElementById("gallery").style.color = "white"
     document.getElementById("bt2").style.backgroundColor   = "#6c757d"
     document.getElementById("bt1").style.color   = "white"
     document.getElementById("bt2").style.color   = "white"

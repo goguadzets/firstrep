@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>JavaSctipt Calculator | Web Dev Trick</title>
+<link rel="stylesheet" href="css/style.css">
+</head> 
+
+<body> 
+    <body style="background-color: #343a40;" >
+       
+    <nav class="navbar navbar-expand-lg navbar-dark " id="test">
+        <a class="navbar-brand" id="man" href="index.html">Main</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" id="folow" href="https://www.instagram.com/ts.goguadze/">Follow me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " id="flap" href="game.html">Play flappy bird</a>
+            </li>
+            <li class="gallery">
+              <a class="nav-link " id="gallery" href="gallery.html" style="color: white;">Visit our epic gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " id="calc" href="calc.html" style="color: white;">Use calculator</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a class="nav-link" style="text-decoration: none; color: aliceblue;" id="fre" href="https://bit.ly/3fA3TIO">Free coupon codes</a></button>
+            </form>
+      
+        </div>
+      </nav>
+	<script>
+	function calcNumbers(result){
+		form.displayResult.value=form.displayResult.value+result;
+		
+	}
+	</script>
+<script>
+    document.getElementById("test").style.backgroundColor = "#6c757d"
+    document.getElementById("folow").style.color = "white"
+    document.getElementById("fre").style.color = "white"
+    document.getElementById("flap").style.color   = "white"
+    document.getElementById("calc").style.color   = "white"
+    $("button").click(function() {
+	$("section div").toggleClass("hidden");
+});
+
+function changeColor(color){
+    if(color =="white"){
+    console.log(color);
+    document.body.style.backgroundColor = "#f8f9fa";
+    document.getElementById("test").style.backgroundColor = "rgb(163 171 179)";
+    document.getElementById("test2").style.backgroundColor = "rgb(163 171 179)";
+    document.getElementById("calc").style.color = "black" 
+    document.getElementById("folow").style.color = "black";
+    document.getElementById("gallery").style.color = "black";
+    document.getElementById("fre").style.color = "black"
+    document.getElementById("flap").style.color   = "black"
+    document.getElementById("bt1").style.backgroundColor   = "rgb(163 171 179)"
+    document.getElementById("bt2").style.backgroundColor   = "rgb(163 171 179)"
+    document.getElementById("bt1").style.color   = "black"
+    document.getElementById("bt2").style.color   = "black"
+    document.getElementById("cop").style.color   = "black"
+    document.getElementById("man").style.color   = "black"
+} else{
+    document.getElementById("test").style.backgroundColor = "#6c757d"
+    document.getElementById("test2").style.backgroundColor = "#6c757d";
+    document.getElementById("folow").style.color = "white"
+    document.getElementById("calc").style.color = "white" 
+    document.getElementById("fre").style.color = "white"
+    document.getElementById("gallery").style.color = "white"
+    document.getElementById("flap").style.color   = "white"
+    document.getElementById("bt1").style.backgroundColor   = "#6c757d"
+    document.getElementById("bt2").style.backgroundColor   = "#6c757d"
+    document.getElementById("bt1").style.color   = "white"
+    document.getElementById("bt2").style.color   = "white"
+    document.getElementById("man").style.color   = "white"
+    document.body.style.backgroundColor = "#343a40";
+    document.getElementById("cop").style.color   = "white"
+}
+
+}
+</script>
+	<div class="container">
+		<form name="form">
+		<div class="display">
+			<input type="text" placeholder="0" name="displayResult" />
+		</div>
+			<div class="buttons">
+			  <div class="row">
+				<input type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
+				  <input type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
+				  <input type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
+				  <input type="button" name="addb" value="+" onClick="calcNumbers(addb.value)">
+				</div>
+				
+				<div class="row">
+				<input type="button"    name="b4" value="4" onClick="calcNumbers(b4.value)">
+				  <input type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
+				  <input type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
+				  <input type="button" name="subb" value="-" onClick="calcNumbers(subb.value)">
+				</div>
+				
+				<div class="row">
+				<input type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
+				  <input type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
+				  <input type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
+				  <input type="button" name="mulb" value="*" onClick="calcNumbers(mulb.value)">
+				</div>
+				
+				<div class="row">
+				<input type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
+				  <input type="button" name="potb" value="." onClick="calcNumbers(potb.value)">
+				  <input type="button" name="divb" value="/" onClick="calcNumbers(divb.value)">
+				  <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+				</div>
+			</div>
+		
+		</form>
+	</div>
+<footer  id="test2" style="height: 50px; background-color: #6c757d;">
+    <div class="d-flex">
+        <button id="bt1" onclick="changeColor('white')" class="btn  btn-sm" style="color: white; background-color:#6c757d;">Ligh mode</button>
+        <button id="bt2" onclick="changeColor('black')"class="btn btn-sm" style="color: white; background-color:#6c757d;" >Dark mode</button>
+        <h6 id="cop" class=" mt-1" style="color: rgb(255, 255, 255);">© 2021</h6>
+    </div>
+
+</footer>
+
+</body>
+	<style>
+        footer {
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the bottom of the page */
+  width: 100%; /* Full width */
+}
+    </style>
+</html>
